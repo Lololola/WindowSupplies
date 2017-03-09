@@ -8,23 +8,26 @@ namespace GlazerCalc
 {
     public class WoodCalc
     {
-        public double windowHeight { get; set; }
-        public double windowWidth { get; set; }
-        public static double TotalWoodLength(double winHeight,
-           double winWidth)
+        public float WindowHeight { get; set; }
+        public float WindowWidth { get; set; }       
+        public static float TotalWoodLength(float winHeight,
+           float winWidth)
         {
             return (winHeight * 2) + (winWidth * 2);
         }
-        public static double MeterToFeet(double totalLength)
+        public static float MeterToFeet(float totalLength)
         {
-            return totalLength * 3.25;
+            double result = (totalLength * 3.25);
+            float result1 = (float)result;
+
+            return result1;
         }
     }
     public class Glasscalc
     {
-        public double windowHeight { get; set; }
-        public double windowWidth { get; set; }
-        public static double AreaOfGlass(double height, double width)
+        public float windowHeight { get; set; }
+        public float windowWidth { get; set; }
+        public static float AreaOfGlass(float height, float width)
         {
             return height * width;
         }

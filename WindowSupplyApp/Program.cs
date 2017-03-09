@@ -25,18 +25,19 @@ namespace WindowSupplyApp
             if (true)
             {
                 Console.Write("Type in Window Height (in meters): ");
-                double windowHeight = Double.Parse(Console.ReadLine());
+                float windowHeight = float.Parse(Console.ReadLine());
                 Console.WriteLine();
                 Console.Write("Type in Window Width (in meters): ");
-                double windowWidth = Double.Parse(Console.ReadLine());
+                float windowWidth = float.Parse(Console.ReadLine());
+               
                 Console.WriteLine();
 
-                double totalWood = WoodCalc.TotalWoodLength(
+                float totalWood = WoodCalc.TotalWoodLength(
                     windowHeight, windowWidth);
                 double totalWoodNeeded = WoodCalc.MeterToFeet(totalWood);
                 Console.WriteLine("TOTAL LENGTH OF WOOD REQUIRED: {0} feet",
                     totalWoodNeeded);
-                double areaOfGlass = Glasscalc.AreaOfGlass(
+                float areaOfGlass = Glasscalc.AreaOfGlass(
                     windowHeight, windowWidth);
                 Console.WriteLine("TOTAL AREA OF GLASS REQUIRED: "
                     + "2 sheets of {0} sq. meters",
