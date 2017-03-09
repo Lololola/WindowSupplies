@@ -33,14 +33,14 @@ namespace WindowSupplyApp
                 float windowHeight = float.Parse(Console.ReadLine());
                 if (windowHeight < MIN_HEIGHT)
                 {
-                    Console.WriteLine("Height is too small.\n\n");
-                    Console.WriteLine("Using minimum: ");
+                    Console.WriteLine("\n\nHeight is too small.\n\n");
+                    Console.WriteLine("Using minimum height: 0.75 meters");
                     windowHeight = (float)MIN_HEIGHT;
                 }
                 if (windowHeight > MAX_HEIGHT)
                 {
-                    Console.WriteLine("Height is too large.\n\n");
-                    Console.WriteLine("Using maximum: ");
+                    Console.WriteLine("\n\nHeight is too large.\n\n");
+                    Console.WriteLine("Using maximum height: 3.0 meters");
                     windowHeight = (float)MAX_HEIGHT;
                 }
                 Console.WriteLine();
@@ -48,14 +48,14 @@ namespace WindowSupplyApp
                 float windowWidth = float.Parse(Console.ReadLine());
                 if (windowWidth < MIN_WIDTH)
                 {
-                    Console.WriteLine("Width is too small.\n\n");
-                    Console.WriteLine("Using minimum");
+                    Console.WriteLine("\n\nWidth is too small.\n\n");
+                    Console.WriteLine("Using minimum width: 0.5 meters");
                     windowWidth = (float)MIN_WIDTH;
                 }
                 if (windowWidth > MAX_HEIGHT)
                 {
-                    Console.WriteLine("Width is too large.\n\n");
-                    Console.WriteLine("Using maximum");
+                    Console.WriteLine("\n\nWidth is too large.\n\n");
+                    Console.WriteLine("Using maximum width: 5.0 meters");
                     windowWidth = (float)MAX_WIDTH;
                 }
                 Console.WriteLine();
